@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038E9320727F6FC9BD9B8524 /* GameButton.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5A8DDADF9170C1DEB9E101F8 /* GameButton.cpp */; settings = {ATTRIBUTES = (); }; };
+		03D3AA7D4C36AB393CCEB1B0 /* WalkableEnemy.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E7A947F94E3C4D366DAC1D7B /* WalkableEnemy.cpp */; settings = {ATTRIBUTES = (); }; };
+		05B305617AE536AEAC2FD53B /* FlameAnimation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 37ABE5DAE38AD1801AC86155 /* FlameAnimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
+		07D3DBE6223B7E6B8589C73A /* TextureAnimation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 51C73470054A4937A89F26B0 /* TextureAnimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		0A39C7A2A534227EAC1E5A9D /* Enemy.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D9A54A899E05AF76A73D4665 /* Enemy.cpp */; settings = {ATTRIBUTES = (); }; };
+		0C6D4628EE0B0D1479A20551 /* AGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C6766F86E49E9C8701C8E637 /* AGL.framework */; };
+		112974988A4A3E593AB060D7 /* LevelSelectorScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C6BD5AAB82B1391B61B6EB27 /* LevelSelectorScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		18D469B9EBF41EC887EDAC1E /* AirEnemy.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D821ADF12D90E06A073455AD /* AirEnemy.cpp */; settings = {ATTRIBUTES = (); }; };
+		1EE48C7C7015F27498CD8295 /* Sprite.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FC787D4F75181A8843631E72 /* Sprite.cpp */; settings = {ATTRIBUTES = (); }; };
+		223EB565268FFD17AA86E475 /* NextWaveBar.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7154CFEFB591F4EB14961E34 /* NextWaveBar.cpp */; settings = {ATTRIBUTES = (); }; };
+		225E27ADB6353EA61030837A /* GameScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 329EFBD210A28D356416AFA0 /* GameScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		26C2BED6C570C95F5243C556 /* moc_mainwindow.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 336D3C48DD3B44974395C633 /* moc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		2BD3758844198CC64EE4C145 /* LifeBar.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = FF8EFCBDD1207E26DA6C2619 /* LifeBar.cpp */; settings = {ATTRIBUTES = (); }; };
+		2E812FBC8E1A8F8CA0084814 /* glwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5F02801ACF9C72A274A802D8 /* glwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		35B6E599CC7E2DDB993E2ACA /* QtTextureLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4D9E78FD4360A47A7ACF1BD7 /* QtTextureLoader.cpp */; settings = {ATTRIBUTES = (); }; };
+		373E793BDB73AD09CA59E60A /* Wave.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B5D5E5321062D41D76B26028 /* Wave.cpp */; settings = {ATTRIBUTES = (); }; };
+		3A9E368BEC270CEE7EFEF4E1 /* FlameTower.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EEE1939162F6AEC221DC33F8 /* FlameTower.cpp */; settings = {ATTRIBUTES = (); }; };
+		3BBD6E3E630068B57C2CEC5B /* moc_glwidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 24FC5F21B8D858EDB1CC09E6 /* moc_glwidget.cpp */; settings = {ATTRIBUTES = (); }; };
+		40DDAD0F299D4E0FDC3F74A3 /* SlowTower.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9AE80399CA5A4592FF211FB2 /* SlowTower.cpp */; settings = {ATTRIBUTES = (); }; };
+		450A0D11527AF164AEFE7377 /* QtOpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C374004D45E01156F931B37D /* QtOpenGL.framework */; };
+		462C0F34BBEF2375A9469BB5 /* mainwindow.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EA177DE95BF7D3EF58EE43F7 /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		481844C33D95F50F4CF0F759 /* CoinAnimation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4A61F0936759342600AAC0BE /* CoinAnimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		49BB1326FBFBA1D5E2E28D52 /* Tower.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 03ABCECFFF0639FB8920A070 /* Tower.cpp */; settings = {ATTRIBUTES = (); }; };
+		4CF7FBD60ABC5F020F292B19 /* QtMain.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1E808EAE1C644E4EF3EE38A3 /* QtMain.cpp */; settings = {ATTRIBUTES = (); }; };
+		4DE68AE05E332A27C961CD53 /* GameMap.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 21058B4828FD30F2C28BB199 /* GameMap.cpp */; settings = {ATTRIBUTES = (); }; };
+		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
+		5C43701AB5E58F9948EFB4B2 /* MainMenuButton.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B8E732F6AA9B51742A40712C /* MainMenuButton.cpp */; settings = {ATTRIBUTES = (); }; };
+		60085D833DA71E4E98A62D52 /* UIItem.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 91F66347D896417DFCE71628 /* UIItem.cpp */; settings = {ATTRIBUTES = (); }; };
+		605D26C7501E17B01B7F4BD8 /* Screen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 40F6A25DB6295069C525A6C4 /* Screen.cpp */; settings = {ATTRIBUTES = (); }; };
+		61E66B1E46226AFC89AF2D7C /* GameTimeManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 73F3EF2121295CBD2EB8DB75 /* GameTimeManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		65F94688E6C9FFEA4FBFA92A /* InGameMenu.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D9298851234678C0605FE964 /* InGameMenu.cpp */; settings = {ATTRIBUTES = (); }; };
+		691F80419DAF960C3789F355 /* TextureAtlasManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 798D990200E08D33012D8A42 /* TextureAtlasManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		69C8C03EE43BEBEFF8F0FCA8 /* Texture.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9A0F802E57700F93767BC2D6 /* Texture.cpp */; settings = {ATTRIBUTES = (); }; };
+		767E140777B05486FF1929EF /* HotSpot.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F01A956424007898AFDD9390 /* HotSpot.cpp */; settings = {ATTRIBUTES = (); }; };
+		82CE6CB015DA0F664E438CF8 /* UpgradeMenu.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 389DFF1851601E623C8735AF /* UpgradeMenu.cpp */; settings = {ATTRIBUTES = (); }; };
+		84C20B7C10640BEFF2394E67 /* FailedDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EF4C6FE10ED1427FC841FA20 /* FailedDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		89D526C2AD8C105BEEA57C8B /* QuitDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C5265BCF16AED3B7BC2ACFBB /* QuitDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		8A128412ACED4D74012BC9F3 /* SmallAnimationManager.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BAD5387C8004184A5A5DC416 /* SmallAnimationManager.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DA7B1DB00C336CCA3E294AE /* QuadHelper.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6F40959253CC0D1F3FBAEB78 /* QuadHelper.cpp */; settings = {ATTRIBUTES = (); }; };
+		A5FADFFB844BD9ED44046F19 /* TextureAtlas.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 88DC2EDABCBC86DA517F92B3 /* TextureAtlas.cpp */; settings = {ATTRIBUTES = (); }; };
+		B3C91C595FFECB86D21DF69C /* WinDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E9A4BF442FF4ABAF414938F3 /* WinDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		B5C157B39DBCF3192A4E7E77 /* ResearchScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C041CC1B224202E90FFDE441 /* ResearchScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		B6DF3FAA034DCDB267BCAF96 /* SmallAnimation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AF5ECF2271E61BEB2CE3F5BD /* SmallAnimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		B97C2CD444C1CD65B340117A /* EnemyFactory.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = B44CBE44E1C2C528B1B69D51 /* EnemyFactory.cpp */; settings = {ATTRIBUTES = (); }; };
+		BADE9F11DD4620F4B3D4D636 /* AchievementsScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = D82548468ACEEB5F7063F2D7 /* AchievementsScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		BB85FAE7760CAC0817E0D85A /* MoneyBar.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6CC97B2FF70D5A09137B3AAE /* MoneyBar.cpp */; settings = {ATTRIBUTES = (); }; };
+		BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA18A6831232F53228631AD1 /* OpenGL.framework */; };
+		C087B30F8618313550B0422C /* LostDialog.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = C3896C1F0CD545EC6DB74044 /* LostDialog.cpp */; settings = {ATTRIBUTES = (); }; };
+		C7E140C21B6B91A17F9AC119 /* PlayerInfo.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = BB0ADB43CF141CD2202DD355 /* PlayerInfo.cpp */; settings = {ATTRIBUTES = (); }; };
+		D73E405575B1C644963D5026 /* MainMenuScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7ECE4ABF5B6816955A4E5135 /* MainMenuScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		DB55B95E12C063F2009572D0 /* towerdefense.app in Project Copy */ = {isa = PBXBuildFile; fileRef = DB55B95B12C063F2009572D0 /* towerdefense.app */; };
+		DE7488D75DC0E44796C78DEB /* TowerIconButton.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 321FA3774C11AE56B3CD2ACA /* TowerIconButton.cpp */; settings = {ATTRIBUTES = (); }; };
+		DF46DB9C2EDAF640E345E851 /* NotificationAnimation.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 37EDCB510F7091FA78E65540 /* NotificationAnimation.cpp */; settings = {ATTRIBUTES = (); }; };
+		EBB6347D8F40FA0B4533F229 /* TowerFactory.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 406C70D208EC659593CEC322 /* TowerFactory.cpp */; settings = {ATTRIBUTES = (); }; };
+		FA36FFCE4DBDC8B0DCF175E7 /* Game.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 57EABC45F1DA1F13FF826F84 /* Game.cpp */; settings = {ATTRIBUTES = (); }; };
+		FA83C3B082D6D8CF7D3BBBC1 /* Bullet.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 09A5451A22E6AE906A42149A /* Bullet.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/billconan/Dropbox/TowerCommander/jni/TowerDefense;
+			dstSubfolderSpec = 0;
+			files = (
+				DB55B95E12C063F2009572D0 /* towerdefense.app in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03ABCECFFF0639FB8920A070 /* Tower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tower.cpp; sourceTree = "<group>"; };
+		0410DD191D18957259E0FC73 /* GameMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameMap.h; sourceTree = "<group>"; };
+		090812D8FC507A67B232D5E4 /* HotSpot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotSpot.h; sourceTree = "<group>"; };
+		09A5451A22E6AE906A42149A /* Bullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		174B4969275AA57F83F57165 /* glwidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glwidget.h; sourceTree = "<group>"; };
+		1D6F1CB246B76BEAB4CA13B0 /* QuadHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadHelper.h; sourceTree = "<group>"; };
+		1E808EAE1C644E4EF3EE38A3 /* QtMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QtMain.cpp; sourceTree = "<group>"; };
+		21058B4828FD30F2C28BB199 /* GameMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameMap.cpp; sourceTree = "<group>"; };
+		23D20C773F6AB3F010B9DACB /* MoneyBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyBar.h; sourceTree = "<group>"; };
+		24D0B1129461880E66E0A981 /* AndroidTextureLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidTextureLoader.h; sourceTree = "<group>"; };
+		24FC5F21B8D858EDB1CC09E6 /* moc_glwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_glwidget.cpp; sourceTree = "<group>"; };
+		2F27C574FDBAA362E1FB2E7E /* CurrentLevelStatistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLevelStatistics.h; sourceTree = "<group>"; };
+		3104C71FBACFD22A79CC3B52 /* towerdefense.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = towerdefense.pro; sourceTree = "<group>"; };
+		321FA3774C11AE56B3CD2ACA /* TowerIconButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TowerIconButton.cpp; sourceTree = "<group>"; };
+		329EFBD210A28D356416AFA0 /* GameScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameScreen.cpp; sourceTree = "<group>"; };
+		3332F4DCF330A63973A30BE0 /* UIItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIItem.h; sourceTree = "<group>"; };
+		336D3C48DD3B44974395C633 /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_mainwindow.cpp; sourceTree = "<group>"; };
+		37ABE5DAE38AD1801AC86155 /* FlameAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlameAnimation.cpp; sourceTree = "<group>"; };
+		37EDCB510F7091FA78E65540 /* NotificationAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NotificationAnimation.cpp; sourceTree = "<group>"; };
+		389DFF1851601E623C8735AF /* UpgradeMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UpgradeMenu.cpp; sourceTree = "<group>"; };
+		38B089181AFE63C6DA071A65 /* SlowTower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlowTower.h; sourceTree = "<group>"; };
+		3D218E6C38D9886B1B581733 /* EnemyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnemyFactory.h; sourceTree = "<group>"; };
+		406C70D208EC659593CEC322 /* TowerFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TowerFactory.cpp; sourceTree = "<group>"; };
+		40F6A25DB6295069C525A6C4 /* Screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		4205E60062748D765510FA71 /* Screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		49FE5CFEE89D0E3C16DE41AE /* FailedDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FailedDialog.h; sourceTree = "<group>"; };
+		4A61F0936759342600AAC0BE /* CoinAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CoinAnimation.cpp; sourceTree = "<group>"; };
+		4D26B2B1D08812D48EF5ADCA /* FastDelegateBind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastDelegateBind.h; sourceTree = "<group>"; };
+		4D9E78FD4360A47A7ACF1BD7 /* QtTextureLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QtTextureLoader.cpp; sourceTree = "<group>"; };
+		4E869C2DFD580444018C7C5C /* QtSoundManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QtSoundManager.h; sourceTree = "<group>"; };
+		4EA8E0FDC40AC1830F94EDEA /* LifeBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeBar.h; sourceTree = "<group>"; };
+		501269D1D0CB94B7F26BD251 /* GameTimeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameTimeManager.h; sourceTree = "<group>"; };
+		5191F00FA59CDD8135B64CA1 /* Point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		51C73470054A4937A89F26B0 /* TextureAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureAnimation.cpp; sourceTree = "<group>"; };
+		5777FD27D5B86EFF477E98CF /* Bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		57EABC45F1DA1F13FF826F84 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		59C805795F7884552B0AFF6A /* CoinAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinAnimation.h; sourceTree = "<group>"; };
+		5A8DDADF9170C1DEB9E101F8 /* GameButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameButton.cpp; sourceTree = "<group>"; };
+		5F02801ACF9C72A274A802D8 /* glwidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = glwidget.cpp; sourceTree = "<group>"; };
+		6403B1C7B7F72BCD3F0043D9 /* TowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TowerFactory.h; sourceTree = "<group>"; };
+		66855C4EEFC57B715B55C08D /* FlameTower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlameTower.h; sourceTree = "<group>"; };
+		6CC97B2FF70D5A09137B3AAE /* MoneyBar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MoneyBar.cpp; sourceTree = "<group>"; };
+		6F40959253CC0D1F3FBAEB78 /* QuadHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuadHelper.cpp; sourceTree = "<group>"; };
+		7154CFEFB591F4EB14961E34 /* NextWaveBar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NextWaveBar.cpp; sourceTree = "<group>"; };
+		73F3EF2121295CBD2EB8DB75 /* GameTimeManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameTimeManager.cpp; sourceTree = "<group>"; };
+		763F97D3D9045163665EDE24 /* GlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalConfig.h; sourceTree = "<group>"; };
+		78EA2C4797C1A6AB4A9E52A0 /* TowerIconButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TowerIconButton.h; sourceTree = "<group>"; };
+		798D990200E08D33012D8A42 /* TextureAtlasManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureAtlasManager.cpp; sourceTree = "<group>"; };
+		79D273C3FF72644913CBD1E3 /* Tower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tower.h; sourceTree = "<group>"; };
+		7A56E4AF92149F012586CD90 /* AchievementsScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AchievementsScreen.h; sourceTree = "<group>"; };
+		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		7ECE4ABF5B6816955A4E5135 /* MainMenuScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuScreen.cpp; sourceTree = "<group>"; };
+		81EBB0F83D8C13F97AD35E41 /* WinDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WinDialog.h; sourceTree = "<group>"; };
+		88DC2EDABCBC86DA517F92B3 /* TextureAtlas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureAtlas.cpp; sourceTree = "<group>"; };
+		89C506AF1C091C3A6F5320BB /* WalkableEnemy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalkableEnemy.h; sourceTree = "<group>"; };
+		8CF4A0A4DD3344CF224D7388 /* UpgradeMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpgradeMenu.h; sourceTree = "<group>"; };
+		8F3677490DBD964FB23A24FE /* Sprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		91F66347D896417DFCE71628 /* UIItem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIItem.cpp; sourceTree = "<group>"; };
+		9435DEE9872BB4A68D8CA0BB /* MainMenuScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuScreen.h; sourceTree = "<group>"; };
+		99E74C307B201F8B7EE804E3 /* TextureAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureAnimation.h; sourceTree = "<group>"; };
+		9A0F802E57700F93767BC2D6 /* Texture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		9AE80399CA5A4592FF211FB2 /* SlowTower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SlowTower.cpp; sourceTree = "<group>"; };
+		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		9FB101D8E87C0173018F0586 /* TextureAtlas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureAtlas.h; sourceTree = "<group>"; };
+		9FCEB0F4EF489C1AA116CFCE /* TextureAtlasManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureAtlasManager.h; sourceTree = "<group>"; };
+		A35D0CA5A6A87E78C35519FB /* AirEnemy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirEnemy.h; sourceTree = "<group>"; };
+		A7B9BE8F1BE61BE7E75F4A62 /* SmallAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallAnimation.h; sourceTree = "<group>"; };
+		AA04E588FEC20792EF7AAB56 /* NotificationAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationAnimation.h; sourceTree = "<group>"; };
+		AF5ECF2271E61BEB2CE3F5BD /* SmallAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SmallAnimation.cpp; sourceTree = "<group>"; };
+		B3C98CAB4826EFFD35CCE821 /* MainMenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuButton.h; sourceTree = "<group>"; };
+		B44CBE44E1C2C528B1B69D51 /* EnemyFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyFactory.cpp; sourceTree = "<group>"; };
+		B5D5E5321062D41D76B26028 /* Wave.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Wave.cpp; sourceTree = "<group>"; };
+		B8E732F6AA9B51742A40712C /* MainMenuButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuButton.cpp; sourceTree = "<group>"; };
+		B8F4D826FD077CBCA4AE76B5 /* Wave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
+		B9BAB750932C5DCE4D8B6A28 /* GameScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScreen.h; sourceTree = "<group>"; };
+		BAD5387C8004184A5A5DC416 /* SmallAnimationManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SmallAnimationManager.cpp; sourceTree = "<group>"; };
+		BB0ADB43CF141CD2202DD355 /* PlayerInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerInfo.cpp; sourceTree = "<group>"; };
+		C041CC1B224202E90FFDE441 /* ResearchScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ResearchScreen.cpp; sourceTree = "<group>"; };
+		C16A38978FF11EF723E5AADD /* NextWaveBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextWaveBar.h; sourceTree = "<group>"; };
+		C24C7A1A5236D573C65CB15E /* LostDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LostDialog.h; sourceTree = "<group>"; };
+		C374004D45E01156F931B37D /* QtOpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtOpenGL.framework; path = /Library/Frameworks/QtOpenGL.framework; sourceTree = "<absolute>"; };
+		C3896C1F0CD545EC6DB74044 /* LostDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LostDialog.cpp; sourceTree = "<group>"; };
+		C5265BCF16AED3B7BC2ACFBB /* QuitDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuitDialog.cpp; sourceTree = "<group>"; };
+		C5CDF37C9FBBA05DC0DD2430 /* AndroidControlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidControlManager.h; sourceTree = "<group>"; };
+		C5FA8264D73378206229064F /* PlayerInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerInfo.h; sourceTree = "<group>"; };
+		C63FA392C61F27B1B13369C1 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainwindow.h; sourceTree = "<group>"; };
+		C6766F86E49E9C8701C8E637 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		C6BD5AAB82B1391B61B6EB27 /* LevelSelectorScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LevelSelectorScreen.cpp; sourceTree = "<group>"; };
+		CE390D5DCE328C0A91F82774 /* GameButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
+		CF29BB82864073394A026052 /* SmallAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallAnimationManager.h; sourceTree = "<group>"; };
+		D2BC852AD5AD108CC30B2AC2 /* FastDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastDelegate.h; sourceTree = "<group>"; };
+		D6F9544CF1131FA246D9689D /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		D821ADF12D90E06A073455AD /* AirEnemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AirEnemy.cpp; sourceTree = "<group>"; };
+		D82548468ACEEB5F7063F2D7 /* AchievementsScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AchievementsScreen.cpp; sourceTree = "<group>"; };
+		D84CCC8B91539242B85ACD54 /* LevelSelectorScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelSelectorScreen.h; sourceTree = "<group>"; };
+		D8B297D6190E3053DC890A46 /* InGameMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InGameMenu.h; sourceTree = "<group>"; };
+		D907975E62C51DF3B63B1FA4 /* AndroidSoundManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AndroidSoundManager.h; sourceTree = "<group>"; };
+		D9298851234678C0605FE964 /* InGameMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InGameMenu.cpp; sourceTree = "<group>"; };
+		D9A54A899E05AF76A73D4665 /* Enemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		DA18A6831232F53228631AD1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		DB55B95B12C063F2009572D0 /* towerdefense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = towerdefense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4E722EE3577ED849D32E03 /* Enemy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		E7A947F94E3C4D366DAC1D7B /* WalkableEnemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WalkableEnemy.cpp; sourceTree = "<group>"; };
+		E9A4BF442FF4ABAF414938F3 /* WinDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WinDialog.cpp; sourceTree = "<group>"; };
+		E9DB45D3F765D2DC598185DD /* QuitDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuitDialog.h; sourceTree = "<group>"; };
+		EA177DE95BF7D3EF58EE43F7 /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mainwindow.cpp; sourceTree = "<group>"; };
+		EAC8DD86ED352FF4F05C1726 /* Texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		EDCBD3A6EC4C0363E203A3DB /* PathFindNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathFindNode.h; sourceTree = "<group>"; };
+		EEE1939162F6AEC221DC33F8 /* FlameTower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlameTower.cpp; sourceTree = "<group>"; };
+		EF4C6FE10ED1427FC841FA20 /* FailedDialog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FailedDialog.cpp; sourceTree = "<group>"; };
+		F01A956424007898AFDD9390 /* HotSpot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HotSpot.cpp; sourceTree = "<group>"; };
+		FC787D4F75181A8843631E72 /* Sprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		FDE128B76A1C6521D5E205FD /* QtTextureLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QtTextureLoader.h; sourceTree = "<group>"; };
+		FE66F414F47A1A564F5BA6D3 /* ResearchScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResearchScreen.h; sourceTree = "<group>"; };
+		FE70A3E7CC3A7503704B24A3 /* FlameAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlameAnimation.h; sourceTree = "<group>"; };
+		FF8EFCBDD1207E26DA6C2619 /* LifeBar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LifeBar.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450A0D11527AF164AEFE7377 /* QtOpenGL.framework in Frameworks & Libraries */,
+				501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */,
+				069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */,
+				BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */,
+				0C6D4628EE0B0D1479A20551 /* AGL.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* towerdefense */ = {
+			isa = PBXGroup;
+			children = (
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				DB55B95C12C063F2009572D0 /* Products */,
+			);
+			name = towerdefense;
+			sourceTree = "<group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				336D3C48DD3B44974395C633 /* moc_mainwindow.cpp */,
+				24FC5F21B8D858EDB1CC09E6 /* moc_glwidget.cpp */,
+			);
+			name = "Temporary Sources";
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				3104C71FBACFD22A79CC3B52 /* towerdefense.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				7A56E4AF92149F012586CD90 /* AchievementsScreen.h */,
+				A35D0CA5A6A87E78C35519FB /* AirEnemy.h */,
+				C5CDF37C9FBBA05DC0DD2430 /* AndroidControlManager.h */,
+				D907975E62C51DF3B63B1FA4 /* AndroidSoundManager.h */,
+				24D0B1129461880E66E0A981 /* AndroidTextureLoader.h */,
+				5777FD27D5B86EFF477E98CF /* Bullet.h */,
+				59C805795F7884552B0AFF6A /* CoinAnimation.h */,
+				2F27C574FDBAA362E1FB2E7E /* CurrentLevelStatistics.h */,
+				DC4E722EE3577ED849D32E03 /* Enemy.h */,
+				3D218E6C38D9886B1B581733 /* EnemyFactory.h */,
+				49FE5CFEE89D0E3C16DE41AE /* FailedDialog.h */,
+				D2BC852AD5AD108CC30B2AC2 /* FastDelegate.h */,
+				4D26B2B1D08812D48EF5ADCA /* FastDelegateBind.h */,
+				FE70A3E7CC3A7503704B24A3 /* FlameAnimation.h */,
+				66855C4EEFC57B715B55C08D /* FlameTower.h */,
+				D6F9544CF1131FA246D9689D /* Game.h */,
+				CE390D5DCE328C0A91F82774 /* GameButton.h */,
+				0410DD191D18957259E0FC73 /* GameMap.h */,
+				B9BAB750932C5DCE4D8B6A28 /* GameScreen.h */,
+				501269D1D0CB94B7F26BD251 /* GameTimeManager.h */,
+				763F97D3D9045163665EDE24 /* GlobalConfig.h */,
+				090812D8FC507A67B232D5E4 /* HotSpot.h */,
+				D8B297D6190E3053DC890A46 /* InGameMenu.h */,
+				D84CCC8B91539242B85ACD54 /* LevelSelectorScreen.h */,
+				4EA8E0FDC40AC1830F94EDEA /* LifeBar.h */,
+				C24C7A1A5236D573C65CB15E /* LostDialog.h */,
+				B3C98CAB4826EFFD35CCE821 /* MainMenuButton.h */,
+				9435DEE9872BB4A68D8CA0BB /* MainMenuScreen.h */,
+				23D20C773F6AB3F010B9DACB /* MoneyBar.h */,
+				C16A38978FF11EF723E5AADD /* NextWaveBar.h */,
+				AA04E588FEC20792EF7AAB56 /* NotificationAnimation.h */,
+				EDCBD3A6EC4C0363E203A3DB /* PathFindNode.h */,
+				C5FA8264D73378206229064F /* PlayerInfo.h */,
+				5191F00FA59CDD8135B64CA1 /* Point.h */,
+				4E869C2DFD580444018C7C5C /* QtSoundManager.h */,
+				FDE128B76A1C6521D5E205FD /* QtTextureLoader.h */,
+				1D6F1CB246B76BEAB4CA13B0 /* QuadHelper.h */,
+				E9DB45D3F765D2DC598185DD /* QuitDialog.h */,
+				FE66F414F47A1A564F5BA6D3 /* ResearchScreen.h */,
+				4205E60062748D765510FA71 /* Screen.h */,
+				38B089181AFE63C6DA071A65 /* SlowTower.h */,
+				A7B9BE8F1BE61BE7E75F4A62 /* SmallAnimation.h */,
+				CF29BB82864073394A026052 /* SmallAnimationManager.h */,
+				8F3677490DBD964FB23A24FE /* Sprite.h */,
+				EAC8DD86ED352FF4F05C1726 /* Texture.h */,
+				99E74C307B201F8B7EE804E3 /* TextureAnimation.h */,
+				9FB101D8E87C0173018F0586 /* TextureAtlas.h */,
+				9FCEB0F4EF489C1AA116CFCE /* TextureAtlasManager.h */,
+				79D273C3FF72644913CBD1E3 /* Tower.h */,
+				6403B1C7B7F72BCD3F0043D9 /* TowerFactory.h */,
+				78EA2C4797C1A6AB4A9E52A0 /* TowerIconButton.h */,
+				3332F4DCF330A63973A30BE0 /* UIItem.h */,
+				8CF4A0A4DD3344CF224D7388 /* UpgradeMenu.h */,
+				89C506AF1C091C3A6F5320BB /* WalkableEnemy.h */,
+				B8F4D826FD077CBCA4AE76B5 /* Wave.h */,
+				81EBB0F83D8C13F97AD35E41 /* WinDialog.h */,
+				C63FA392C61F27B1B13369C1 /* mainwindow.h */,
+				174B4969275AA57F83F57165 /* glwidget.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		DB55B95C12C063F2009572D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB55B95B12C063F2009572D0 /* towerdefense.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C374004D45E01156F931B37D /* QtOpenGL.framework */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+				DA18A6831232F53228631AD1 /* OpenGL.framework */,
+				C6766F86E49E9C8701C8E637 /* AGL.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D82548468ACEEB5F7063F2D7 /* AchievementsScreen.cpp */,
+				D821ADF12D90E06A073455AD /* AirEnemy.cpp */,
+				09A5451A22E6AE906A42149A /* Bullet.cpp */,
+				4A61F0936759342600AAC0BE /* CoinAnimation.cpp */,
+				D9A54A899E05AF76A73D4665 /* Enemy.cpp */,
+				B44CBE44E1C2C528B1B69D51 /* EnemyFactory.cpp */,
+				EF4C6FE10ED1427FC841FA20 /* FailedDialog.cpp */,
+				37ABE5DAE38AD1801AC86155 /* FlameAnimation.cpp */,
+				EEE1939162F6AEC221DC33F8 /* FlameTower.cpp */,
+				57EABC45F1DA1F13FF826F84 /* Game.cpp */,
+				5A8DDADF9170C1DEB9E101F8 /* GameButton.cpp */,
+				21058B4828FD30F2C28BB199 /* GameMap.cpp */,
+				329EFBD210A28D356416AFA0 /* GameScreen.cpp */,
+				73F3EF2121295CBD2EB8DB75 /* GameTimeManager.cpp */,
+				F01A956424007898AFDD9390 /* HotSpot.cpp */,
+				D9298851234678C0605FE964 /* InGameMenu.cpp */,
+				C6BD5AAB82B1391B61B6EB27 /* LevelSelectorScreen.cpp */,
+				FF8EFCBDD1207E26DA6C2619 /* LifeBar.cpp */,
+				C3896C1F0CD545EC6DB74044 /* LostDialog.cpp */,
+				B8E732F6AA9B51742A40712C /* MainMenuButton.cpp */,
+				7ECE4ABF5B6816955A4E5135 /* MainMenuScreen.cpp */,
+				6CC97B2FF70D5A09137B3AAE /* MoneyBar.cpp */,
+				7154CFEFB591F4EB14961E34 /* NextWaveBar.cpp */,
+				37EDCB510F7091FA78E65540 /* NotificationAnimation.cpp */,
+				BB0ADB43CF141CD2202DD355 /* PlayerInfo.cpp */,
+				1E808EAE1C644E4EF3EE38A3 /* QtMain.cpp */,
+				4D9E78FD4360A47A7ACF1BD7 /* QtTextureLoader.cpp */,
+				6F40959253CC0D1F3FBAEB78 /* QuadHelper.cpp */,
+				C5265BCF16AED3B7BC2ACFBB /* QuitDialog.cpp */,
+				C041CC1B224202E90FFDE441 /* ResearchScreen.cpp */,
+				40F6A25DB6295069C525A6C4 /* Screen.cpp */,
+				9AE80399CA5A4592FF211FB2 /* SlowTower.cpp */,
+				AF5ECF2271E61BEB2CE3F5BD /* SmallAnimation.cpp */,
+				BAD5387C8004184A5A5DC416 /* SmallAnimationManager.cpp */,
+				FC787D4F75181A8843631E72 /* Sprite.cpp */,
+				9A0F802E57700F93767BC2D6 /* Texture.cpp */,
+				51C73470054A4937A89F26B0 /* TextureAnimation.cpp */,
+				88DC2EDABCBC86DA517F92B3 /* TextureAtlas.cpp */,
+				798D990200E08D33012D8A42 /* TextureAtlasManager.cpp */,
+				03ABCECFFF0639FB8920A070 /* Tower.cpp */,
+				406C70D208EC659593CEC322 /* TowerFactory.cpp */,
+				321FA3774C11AE56B3CD2ACA /* TowerIconButton.cpp */,
+				91F66347D896417DFCE71628 /* UIItem.cpp */,
+				389DFF1851601E623C8735AF /* UpgradeMenu.cpp */,
+				E7A947F94E3C4D366DAC1D7B /* WalkableEnemy.cpp */,
+				B5D5E5321062D41D76B26028 /* Wave.cpp */,
+				E9A4BF442FF4ABAF414938F3 /* WinDialog.cpp */,
+				5F02801ACF9C72A274A802D8 /* glwidget.cpp */,
+				EA177DE95BF7D3EF58EE43F7 /* mainwindow.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B69E45CEE6ACB3A22807CBEB /* towerdefense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB55B98012C06401009572D0 /* Build configuration list for PBXNativeTarget "towerdefense" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = towerdefense;
+			productName = towerdefense;
+			productReference = DB55B95B12C063F2009572D0 /* towerdefense.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "towerdefense" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 05596AB53D8D521C69802C27 /* towerdefense */;
+			productRefGroup = DB55B95C12C063F2009572D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69E45CEE6ACB3A22807CBEB /* towerdefense */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/billconan/Dropbox/TowerCommander/jni/TowerDefense -f 'towerdefense.xcodeproj/qt_preprocess.mak'";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/billconan/Dropbox/TowerCommander/jni/TowerDefense -f 'towerdefense.xcodeproj/qt_makeqmake.mak'";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADE9F11DD4620F4B3D4D636 /* AchievementsScreen.cpp in Build Sources */,
+				18D469B9EBF41EC887EDAC1E /* AirEnemy.cpp in Build Sources */,
+				FA83C3B082D6D8CF7D3BBBC1 /* Bullet.cpp in Build Sources */,
+				481844C33D95F50F4CF0F759 /* CoinAnimation.cpp in Build Sources */,
+				0A39C7A2A534227EAC1E5A9D /* Enemy.cpp in Build Sources */,
+				B97C2CD444C1CD65B340117A /* EnemyFactory.cpp in Build Sources */,
+				84C20B7C10640BEFF2394E67 /* FailedDialog.cpp in Build Sources */,
+				05B305617AE536AEAC2FD53B /* FlameAnimation.cpp in Build Sources */,
+				3A9E368BEC270CEE7EFEF4E1 /* FlameTower.cpp in Build Sources */,
+				FA36FFCE4DBDC8B0DCF175E7 /* Game.cpp in Build Sources */,
+				038E9320727F6FC9BD9B8524 /* GameButton.cpp in Build Sources */,
+				4DE68AE05E332A27C961CD53 /* GameMap.cpp in Build Sources */,
+				225E27ADB6353EA61030837A /* GameScreen.cpp in Build Sources */,
+				61E66B1E46226AFC89AF2D7C /* GameTimeManager.cpp in Build Sources */,
+				767E140777B05486FF1929EF /* HotSpot.cpp in Build Sources */,
+				65F94688E6C9FFEA4FBFA92A /* InGameMenu.cpp in Build Sources */,
+				112974988A4A3E593AB060D7 /* LevelSelectorScreen.cpp in Build Sources */,
+				2BD3758844198CC64EE4C145 /* LifeBar.cpp in Build Sources */,
+				C087B30F8618313550B0422C /* LostDialog.cpp in Build Sources */,
+				5C43701AB5E58F9948EFB4B2 /* MainMenuButton.cpp in Build Sources */,
+				D73E405575B1C644963D5026 /* MainMenuScreen.cpp in Build Sources */,
+				BB85FAE7760CAC0817E0D85A /* MoneyBar.cpp in Build Sources */,
+				223EB565268FFD17AA86E475 /* NextWaveBar.cpp in Build Sources */,
+				DF46DB9C2EDAF640E345E851 /* NotificationAnimation.cpp in Build Sources */,
+				C7E140C21B6B91A17F9AC119 /* PlayerInfo.cpp in Build Sources */,
+				4CF7FBD60ABC5F020F292B19 /* QtMain.cpp in Build Sources */,
+				35B6E599CC7E2DDB993E2ACA /* QtTextureLoader.cpp in Build Sources */,
+				8DA7B1DB00C336CCA3E294AE /* QuadHelper.cpp in Build Sources */,
+				89D526C2AD8C105BEEA57C8B /* QuitDialog.cpp in Build Sources */,
+				B5C157B39DBCF3192A4E7E77 /* ResearchScreen.cpp in Build Sources */,
+				605D26C7501E17B01B7F4BD8 /* Screen.cpp in Build Sources */,
+				40DDAD0F299D4E0FDC3F74A3 /* SlowTower.cpp in Build Sources */,
+				B6DF3FAA034DCDB267BCAF96 /* SmallAnimation.cpp in Build Sources */,
+				8A128412ACED4D74012BC9F3 /* SmallAnimationManager.cpp in Build Sources */,
+				1EE48C7C7015F27498CD8295 /* Sprite.cpp in Build Sources */,
+				69C8C03EE43BEBEFF8F0FCA8 /* Texture.cpp in Build Sources */,
+				07D3DBE6223B7E6B8589C73A /* TextureAnimation.cpp in Build Sources */,
+				A5FADFFB844BD9ED44046F19 /* TextureAtlas.cpp in Build Sources */,
+				691F80419DAF960C3789F355 /* TextureAtlasManager.cpp in Build Sources */,
+				49BB1326FBFBA1D5E2E28D52 /* Tower.cpp in Build Sources */,
+				EBB6347D8F40FA0B4533F229 /* TowerFactory.cpp in Build Sources */,
+				DE7488D75DC0E44796C78DEB /* TowerIconButton.cpp in Build Sources */,
+				60085D833DA71E4E98A62D52 /* UIItem.cpp in Build Sources */,
+				82CE6CB015DA0F664E438CF8 /* UpgradeMenu.cpp in Build Sources */,
+				03D3AA7D4C36AB393CCEB1B0 /* WalkableEnemy.cpp in Build Sources */,
+				373E793BDB73AD09CA59E60A /* Wave.cpp in Build Sources */,
+				B3C91C595FFECB86D21DF69C /* WinDialog.cpp in Build Sources */,
+				2E812FBC8E1A8F8CA0084814 /* glwidget.cpp in Build Sources */,
+				462C0F34BBEF2375A9469BB5 /* mainwindow.cpp in Build Sources */,
+				26C2BED6C570C95F5243C556 /* moc_mainwindow.cpp in Build Sources */,
+				3BBD6E3E630068B57C2CEC5B /* moc_glwidget.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		DB55B96C12C063F2009572D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/billconan/Dropbox/TowerCommander/jni/TowerDefense;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers,
+					/usr/include/QtOpenGL,
+					/usr/include,
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					"-F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = towerdefense;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		DB55B96D12C063F2009572D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/billconan/Dropbox/TowerCommander/jni/TowerDefense;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers,
+					/usr/include/QtOpenGL,
+					/usr/include,
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					"-F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = towerdefense;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		DB55B96E12C063F2009572D0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/billconan/Dropbox/TowerCommander/jni/TowerDefense;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers,
+					/usr/include/QtOpenGL,
+					/usr/include,
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					"-F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = towerdefense;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "towerdefense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB55B98012C06401009572D0 /* Build configuration list for PBXNativeTarget "towerdefense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB55B96C12C063F2009572D0 /* Debug */,
+				DB55B96D12C063F2009572D0 /* Release */,
+				DB55B96E12C063F2009572D0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}

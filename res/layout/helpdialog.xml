@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="600px" android:layout_height="400px">
+ <ScrollView android:id="@+id/ScrollView" android:layout_width="wrap_content" android:layout_height="360px">
+
+    
+    
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1" android:shrinkColumns="1">
+
+    
+        <TextView
+            android:text="Welcome to try out Tower Commander. This is a tower defense game still under development. The current version is the second release of the inner test. I'm aware of many issues, however it will take me some times to fix them. Please do not be too harsh on the game, because the rating will impact the formal version. And if you have comments, please contact me via email so that I can reply. Thank you."
+            android:padding="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    
+        <TextView
+            android:text="The goal of this game is to stop enemies from crossing each level map by building towers. Enemies generally have two types, while the air enemies can fly over obstacles on the map, the ground enemies must walk around towers and obstacles. For each level, you will start with a little fund and certain health points. Building and upgrading a tower will cost you some money. Every time an enemy passes through the map and reaches the end point, you will lose one health point. The mission will fail if you have zero health point. Killing enemies will spawn some money that will be automatically added to your fund."
+            android:padding="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+  
+    
+       <ImageView
+       android:src="@drawable/healthandmoneybar"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+  
+        <TextView
+            android:text="One the top right corner of the game scene, a count down will show up if there is a new wave of enemies coming."
+            android:padding="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+      
+ 
+    
+       <ImageView
+       android:src="@drawable/newwave"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+  
+        <TextView
+            android:text="To build a tower, simply press the bulldozer button at the bottom right, this will open the building menu."
+            android:padding="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+      
+
+    
+       <ImageView
+       android:src="@drawable/buildmenu"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+
+    
+    
+     
+        <TextView
+            android:text="And then press on one of the basic three towers and drag it onto the map. Because the towers are small, they tend to be covered up by your finger tip. Therefore, to better visualize the tower position, there is a small offset between your finger and the tower. Also, you can close the building menu at anytime to have a better view of the game map."
+            android:padding="10dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    
+
+            <TableRow
+            android:layout_width="fill_parent"
+            
+            >
+            
+               <ImageView
+             
+       android:src="@drawable/tower"
+       android:padding="10dip"
+       />
+       
+        <TextView
+  
+            android:text="A tower cannot overlap an existing tower or obstacle, nor it can block the path of the enemies to the end point. Of course, you also need to have enough money."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+            
+            
+            
+      
+    </TableRow>
+    
+    
+  
+       
+        <TextView
+  
+            android:text="Advanced towers can be obtained only through upgrading. Tap on a built tower on the map, a upgrade dialog will popup. Sometimes, you can have two upgrade choices. You can also sell your tower from this dialog."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+     
+    
+       <ImageView
+       android:src="@drawable/upgradingdialog"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+   
+        <TextView
+  
+            android:text="There are five kinds of towers. Each has its own characteristics. The gun towers generally shoot fast but weak."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+            
+                 <ImageView
+       android:src="@drawable/gun"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+            
+                    <TextView
+  
+            android:text="Cannons are slow but powerful."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+            
+                 <ImageView
+       android:src="@drawable/cannon"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+            
+                             <TextView
+  
+            android:text="Flames can have long lasting damage on the enemies. Even if an enemy moves beyond a flame tower's range, it will still be possible to lose health points."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+            
+                 <ImageView
+       android:src="@drawable/flame"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+               <TextView
+            android:text="Missiles can attack air enemies."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+                 <ImageView
+       android:src="@drawable/rocket"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+                <TextView
+  
+            android:text="Lasers are powerful and fast but expensive."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+                 <ImageView
+       android:src="@drawable/laser"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+                            <TextView
+  
+            android:text="Slow Rays don't damage but slow down the nearby enemies."
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+                 <ImageView
+       android:src="@drawable/slow"
+       android:layout_gravity="center_horizontal" android:padding="10dip"
+       />
+       
+            
+                            <TextView
+  
+            android:text="Different towers of a same kind varys in their speed, range and damage capability. And of course, different enemies have different resistance to different towers. Enjoy your game!"
+            
+            android:padding="10dip"  android:layout_width="fill_parent" />
+    
+</TableLayout>
+ </ScrollView>
+</RelativeLayout>
